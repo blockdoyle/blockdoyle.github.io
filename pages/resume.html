@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brock Lockhart-Doyle - Resume</title>
-</head>
-<body>
-    <h1>=^)</h1>
-    <a href="../index.html">Return to homepage</a>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://yarnpkg.com/en/package/normalize.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Brock Lockhart-Doyle</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link"href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="container text-center mt-2">
+            <div class="row justify-content-center">
+                <div class="col-8 p-4 fs-4" id="short-paragraph">
+                    <h1>My Resume</h1>
+                </div>
+                <style>
+                    .pdfobject-container { height: 70vh; border: 1px solid #ccc; }
+                </style>
+                <div id="my-pdf"></div>
+                <script src="https://unpkg.com/pdfobject"></script>
+                <script>PDFObject.embed("../content/resume.pdf", "#my-pdf");</script>
+            </div>
+        </div>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.3.0/pdfobject.min.js"
+    integrity="sha512-Nr6NV16pWOefJbWJiT8SrmZwOomToo/84CNd0MN6DxhP5yk8UAoPUjNuBj9KyRYVpESUb14RTef7FKxLVA4WGQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 </html>
