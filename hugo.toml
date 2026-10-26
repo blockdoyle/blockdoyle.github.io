@@ -1,0 +1,12 @@
+baseURL = "https://blockdoyle.github.io/"
+languageCode = "en-ca"
+title = "Block Doyle"
+theme = "PaperMod"
+
+[params]
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+[markup.highlight]
+  style = "monokai"
